@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+  display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.header-first {
+	height: 109px;
+	display: flex;
+  align-items: flex-end;
+}
+
+.header-leftStrip {
+	height: 2px;
+	background: #000;
+	flex: 1 1;
+}
+
+.header-rightStrip {
+	height: 2px;
+	background: #000;
+	flex: 1 1;
+}
+
+.header-logo {
+	width: 225px;
+	height: 72px;
+	position: relative;
+}
+
+.logo-bell {
+	position: absolute;
+  top: 0px;
+}
