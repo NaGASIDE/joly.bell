@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Futura';
+  src:  url('../../shared/fonts/Futura.woff') format('woff')
+}
+
 body {
 	margin: 0;
 	padding: 0;
+  font-family: Futura;
 }
 
 .header {
@@ -36,4 +42,56 @@ body {
 .logo-bell {
 	position: absolute;
   top: 0px;
+}
+
+.logo-strip-top {
+	position: absolute;
+	width: 90px;
+	top: 0;
+	right: 0.83em;
+	height: 2px;
+    background: #000;
+}
+
+.logo-strip-bottom {
+	height: 2px;
+	width: 6.46em;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+	background: #000;
+}
+
+.logo-content {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.logo-left {
+	height: 71px;
+}
+
+.header-second {
+  height: 121px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  width: calc(100vw - 110px);
+  max-width: 1100px;
+	position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }

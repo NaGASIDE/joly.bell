@@ -3,6 +3,8 @@ import { ReactComponent as Joly } from '../../shared/icons/joly.svg'
 import { ReactComponent as Dot } from '../../shared/icons/dot.svg'
 import { ReactComponent as JolyDot } from '../../shared/icons/jolydot.svg'
 import { ReactComponent as Bell } from '../../shared/icons/bell.svg'
+import { HeaderMenuItem } from '../HeaderMenuItem/HeaderMenuItem'
+import { headerMenuItems } from '../../shared/helpers/index'
 import './style.scss';
 
 export const Header = () => {
@@ -32,7 +34,11 @@ export const Header = () => {
           <div className='header-rightStrip' />
         </div>
         <div className='header-second' >
-
+          <ul className='header-menu' >
+            {headerMenuItems.map(({ type, showName }) => (
+             <HeaderMenuItem type={type} showName={showName} />
+            ))}
+          </ul>
         </div>
       </header>
     )
