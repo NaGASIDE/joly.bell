@@ -1,0 +1,21 @@
+.header-menu-item {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.footer-menu-item {
+  margin: 10px 0px 0px 30px;
+  &:first-child {
+    margin-left: 0px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  background: #0d0d00;
+  padding: 40px;
+  .first-floor {
+    display: flex;
+    justify-content: space-between;
+    .menu-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      .footer-menu-item {
+        margin: 10px 0px 0px 30px;
+      }
+    }
+  }
+}
+
+.footer-list {
+  display: flex;
+  .footer-email {
+    .footer-email-perfix {
+      font-size: 13px;
+      font-weight: 400;
+      color: #616060;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer-paymentoptions-visa {
+  height: 17px;
+}
+.footer-paymentoptions-wayforpay {
+  height: 17px;
+}

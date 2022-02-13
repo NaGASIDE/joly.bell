@@ -1,0 +1,51 @@
+.main {
+  margin-top: -320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-slider {
+  min-height: 900px;
+}
+
+.main-slider-slide-item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.app-page {
+  min-height: calc(var(--vh,1vh)*120 - 230px);
+}
+
+.main-phrase {
+  position: relative;
+  overflow: hidden;
+  contain: strict;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.main-phrase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-phrase-text {
+  font-size: 21px;
+  line-height: 43px;
+  word-spacing: 8px;
+  span {
+    padding: 9px 15px;
+    background: #000;
+    color: #fff;
+  }
+}

@@ -10,9 +10,14 @@ body {
 }
 
 .header {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	width: 100%;
+	z-index: 11;
+	* {
+		color: white;
+		fill: white;
+	}
 }
 
 .header-first {
@@ -25,12 +30,14 @@ body {
 	height: 2px;
 	background: #000;
 	flex: 1 1;
+	background: white;
 }
 
 .header-rightStrip {
 	height: 2px;
 	background: #000;
 	flex: 1 1;
+	background: white;
 }
 
 .header-logo {
@@ -50,7 +57,7 @@ body {
 	top: 0;
 	right: 0.83em;
 	height: 2px;
-    background: #000;
+    background: #fff;
 }
 
 .logo-strip-bottom {
@@ -59,7 +66,7 @@ body {
 	position: absolute;
     right: 0;
     bottom: 0;
-	background: #000;
+	background: #fff;
 }
 
 .logo-content {
@@ -77,6 +84,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+	color: white;
 }
 
 .header-menu {
