@@ -1,3 +1,4 @@
+//TODO Понять как работает здесь анимация
 .header-menu-item {
   list-style: none;
   position: relative;
@@ -6,16 +7,52 @@
   a {
     color: #fff;
     text-decoration: none;
+    &:not(:hover):after {
+      webkit-transform: scalex(0);
+      transform: scalex(0);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: -3px;
+      background: #fff;
+      transition: transform .5s,-webkit-transform .5s;
+    }
   }
 }
 
+//TODO Понять как работает здесь анимация
 .footer-menu-item {
   margin: 10px 0px 0px 30px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
   &:first-child {
     margin-left: 0px;
   }
+
   a {
     color: #fff;
     text-decoration: none;
+
+    &:not(:hover):after {
+      webkit-transform: scalex(0);
+      transform: scalex(0);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 7px;
+      background: #fff;
+      transition: transform .5s,-webkit-transform .5s;
+    }
   }
 }

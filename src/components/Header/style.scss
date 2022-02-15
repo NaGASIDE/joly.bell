@@ -47,17 +47,18 @@ body {
 }
 
 .logo-bell {
-	position: absolute;
+  position: absolute;
   top: 0px;
+  cursor: pointer;
 }
 
 .logo-strip-top {
-	position: absolute;
-	width: 90px;
-	top: 0;
-	right: 0.83em;
-	height: 2px;
-    background: #fff;
+  position: absolute;
+  width: 90px;
+  top: 0;
+  right: 0.83em;
+  height: 2px;
+  background: #fff;
 }
 
 .logo-strip-bottom {

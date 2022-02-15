@@ -17,19 +17,134 @@
 
 .footer-list {
   display: flex;
+  width: 332px;
+  justify-content: space-between;
   .footer-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     .footer-email-perfix {
       font-size: 13px;
       font-weight: 400;
       color: #616060;
+      text-align: right;
       text-transform: uppercase;
+    }
+    .footer-email-contact {
+      font-size: 18px;
+      color: #bfbfbf;
+    }
+  }
+  .footer-paymentoptions {
+    width: 150px;
+    .footer-paymentoptions-prefix {
+      display: flex;
+      flex-direction: column;
+      font-size: 13.74px;
+      font-weight: 400;
+      color: #616060;
+      text-transform: uppercase;
+    }
+    .footer-paymentoptions-list {
+      margin-top: 7px;
+      display: flex;
+      justify-content: space-between;
+      .footer-paymentoptions-visa {
+        height: 17px;
+      }
+      .footer-paymentoptions-wayforpay {
+        height: 17px;
+      }
     }
   }
 }
 
-.footer-paymentoptions-visa {
-  height: 17px;
+
+
+.second-floor {
+  display: flex;
+  margin: 30px 0px 20px 0px;
+  justify-content: space-between;
+  .second-list {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-socials {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    .footer-socials-jolybell {
+      height: 40px;
+      width: 127px;
+      fill: #888;
+    }
+    .footer-socials-instagram {
+      height: 40px;
+      width: 40px;
+      fill: #888;
+    }
+    .footer-socials-vk {
+      height: 40px;
+      width: 40px;
+      fill: #888;
+    }
+  }
+  .footer-workinghours {
+   .footer-workinghours-prefix {
+     font-size: 13px;
+     font-weight: 400;
+     color: #616060;
+     width: 230px;
+     text-transform: uppercase;
+     text-align: right;
+   }
+    .footer-workinghours-content {
+      margin-top: 2px;
+      font-size: 18px;
+      color: #bfbfbf;
+      margin-top: 7px;
+      text-align: right;
+    }
+  }
+  .footer-paymentoptions {
+    .footer-paymentoptions-list {
+      .footer-paymentoptions-mastercard {
+        height: 64px;
+      }
+      .footer-paymentoptions-privat24 {
+        height: 64px ;
+      }
+    }
+  }
 }
-.footer-paymentoptions-wayforpay {
-  height: 17px;
+
+
+
+.third-floor {
+  display: flex;
+  justify-content: space-between;
+  .footer-public-offer {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    .footer-public-offer-year {
+      font-size: 17px;
+      color: #bfbfbf;
+      padding-top: 7px;
+    }
+    .footer-public-offer-link {
+      font-size: 20px;
+      padding-top: 7px;
+      color: #bfbfbf;
+    }
+  }
+  .footer-post {
+    .footer-post-information {
+      text-align: right;
+      color: #bfbfbf;
+      margin: 0;
+      font-size: 20px;
+    }
+  }
 }
