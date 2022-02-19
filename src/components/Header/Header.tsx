@@ -1,8 +1,9 @@
 import React from 'react';
+import { ChangeLanguage } from './ChangeLanguage/ChangeLanguage'
+import { MenuItem } from '../MenuItem/MenuItem'
 import { ReactComponent as JolyDot } from '../../shared/icons/jolydot.svg'
 import { ReactComponent as Bell } from '../../shared/icons/bell.svg'
-import { MenuItem } from '../MenuItem/MenuItem'
-import { headerMenuItems } from '../../shared/helpers'
+import {headerMenuItems, IHeaderMenuItem } from '../../shared/helpers'
 import './style.scss';
 
 export const Header = () => {
@@ -25,7 +26,6 @@ export const Header = () => {
                   <div className='logo-strip-top'/>
                   <div className='logo-strip-bottom'/>
                 </div>
-
               </div>
             </div>
           </a>
@@ -33,10 +33,21 @@ export const Header = () => {
         </div>
         <div className='header-second' >
           <ul className='header-menu' >
-            {headerMenuItems.map(({ type, showName }) => (
+            {headerMenuItems.map(({ type, showName }: IHeaderMenuItem) => (
              <MenuItem type={type} showName={showName} classname='header' />
             ))}
           </ul>
+          <div className='header-second-menu' >
+            <div className='header-second-menu-other' >
+              <ChangeLanguage />
+            </div>
+            <div className='header-second-account' >
+
+            </div>
+            <div className='header-second-card' >
+
+            </div>
+          </div>
         </div>
       </header>
     )
